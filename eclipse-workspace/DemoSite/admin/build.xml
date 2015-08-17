@@ -24,6 +24,7 @@
     <target name="tomcat">
         <delete dir="war/WEB-INF/lib"/>
         <artifact:mvn mavenHome="${maven.home}" fork="true">
+        	<jvmarg value="-Dmaven.multiModuleProjectDirectory=$M2_HOME"/>
             <jvmarg value="-XX:MaxPermSize=256M" />
             <jvmarg value="-Xmx512M" />
             <jvmarg value="-Xdebug" />
