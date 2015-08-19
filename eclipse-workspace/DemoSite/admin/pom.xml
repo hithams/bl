@@ -59,6 +59,13 @@
                     <port>${httpPort}</port>
                     <httpsPort>${httpsPort}</httpsPort>
                 </configuration>
+                <dependencies>
+					<dependency>
+						<groupId>org.postgresql</groupId>
+						<artifactId>postgresql</artifactId>
+						<version>9.4-1201-jdbc4</version>
+					</dependency>
+				</dependencies>
             </plugin>
             
             <plugin>
